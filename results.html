@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Right-Click — Results</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">🖱️</div>
+      <div class="header-text">
+        <h1>Smart <span>Right-Click</span></h1>
+        <div class="tagline">Highlight · Right-click · Insight</div>
+      </div>
+    </div>
+
+    <div id="queryCard" class="query-card" style="display:none">
+      <div class="query-text">
+        <div class="label">Selected text</div>
+        <div class="value" id="queryText"></div>
+      </div>
+      <div class="entity-badge" id="entityBadge">—</div>
+    </div>
+
+    <div class="top-bar" id="topBar" style="display:none">
+      <div class="action-pill" id="actionPill">
+        <div class="dot"></div>
+        <span id="actionLabel"></span>
+      </div>
+      <button class="nav-btn" id="navBtn"></button>
+    </div>
+
+    <div id="loadingView" class="loading">
+      <div class="spinner"></div>
+      <div>Fetching results…</div>
+    </div>
+
+    <div id="resultsView" style="display:none"></div>
+  </div>
+
+  <script src="results.js"></script>
+</body>
+</html>
