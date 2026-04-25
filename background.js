@@ -2,7 +2,7 @@
 // PUT YOUR FREE GNEWS API KEY HERE
 // Get one at: https://gnews.io  (100 requests/day free)
 // ===========================================================
-const GNEWS_API_KEY = "170d2875b6002c9a8a80960c9dfc0b0a";
+const GNEWS_API_KEY = "YOUR_GNEWS_API_KEY_HERE";
 
 chrome.runtime.onInstalled.addListener(() => {
   chrome.contextMenus.create({
